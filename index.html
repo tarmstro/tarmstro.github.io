@@ -1,1 +1,29 @@
-yay!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+  </head>
+  <body ng-app="tarmstro_app">
+    <div ng-controller="MainController">
+      <h2>{{data.name}}</h2> 
+    </div>
+
+
+    <div>
+      <p>At Wheaton, Tom teaches Computer Science courses in the Department of Mathematics and Computer Science. He is the founder of <strong>WHALE</strong>, the <a href="http://www.wheatoncollege.edu/whale/"><strong>WH</strong>eaton <strong>A</strong>utomomous <strong>LE</strong>arning Lab and Makerspace</a>.</p> 
+
+      <p>Tom received a Ph.D. in Computer Science from <a href="http://www.umbc.edu/">UMBC</a> working with <a href="http://ebiquity.umbc.edu/person/html/Tim/Oates/">Tim Oates</a> in the <a href="http://www.coral-lab.org/">Cognition, Robotics, and Learning Lab</a>.  Before his doctoral studies, Tom received a B.Sc. in <a href="http://www.cs.umass.edu/">Computer Science</a> and a B.Sc. in <a href="http://www.math.umass.edu/">Mathematics</a> and <a href="http://www.umass.edu/linguist/">Linguistics</a> at the <a href="http://www.umass.edu/">University of Massachusetts, Amherst</a>.</p>
+
+      <p>He was a member of the Center for Computer-Based Instructional Technology (now the <a href="http://www.cesd.umass.edu/">Center for Educational Software Development</a>) and the Experimental Knowledge Systems Laboratory in the <a href="http://www.cs.umass.edu/">School of Computer Science</a> and the <a href="http://www.umass.edu/language_acquisition/">Language Acquisition Lab</a> in the Linguistics department.</p>
+    </div>
+
+    <script>
+    angular.module("tarmstro_app", [])
+      .controller("MainController", function($scope){
+          $scope.data = {};
+          $scope.data.name = "Tom Armstrong";
+      });
+    </script>
+
+  </body>
+</html> 
