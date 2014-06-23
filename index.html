@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/flat-ui.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
   </head>
   <body ng-app="tarmstro_app">
-    <div ng-controller="MainController">
-      <h2>{{data.name}}</h2> 
-    </div>
+    <br>
+    <div class="container" ng-controller="MainController">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+          <img src="images/tom.jpg" width="250" class="img-polaroid img-rounded">
+        </div>
+        <div class="col-md-6">
+          <h2><strong>Tom Armstrong</strong></h2>
+          <blockquote>Tom is {{data.title}} Professor of Computer Science in the <a href="http://wheatoncollege.edu/computer-science/">Department of Math and Computer Science</a> at <a href="http://www.wheatoncollege.edu/">Wheaton College</a> in Norton, Massachusetts. He was a <a href="http://www.cies.org/us_scholars/us_awards/">Fulbright</a>-<a href="http://www.usief.org.in/">Nehru</a> Visiting Lecturer at the <a href="http://www.ngu.ac.in/"> Hemchandracharya North Gujarat University </a> in <a href="http://maps.google.com/maps?q=patan+gujarat">Patan, Gujarat, India</a>.</blockquote>
+        </div>
+      </div>
 
-    <div>Tom is Assistant Professor of Computer Science in the Department of Math and Computer Science at Wheaton College in Norton, Massachusetts. He was a Fulbright-Nehru Visiting Lecturer at the Hemchandracharya North Gujarat University in Patan, Gujarat, India.</div>
+      <div class="row marketing well">
+        <div class="col-lg-6">
+          <h3 class="text-center">Biographical Sketch</h3>
+          <p>At Wheaton, Tom teaches Computer Science courses in the Department of Mathematics and Computer Science. He is the founder of <strong>WHALE</strong>, the <a href="http://www.wheatoncollege.edu/whale/"><strong>WH</strong>eaton <strong>A</strong>utomomous <strong>LE</strong>arning Lab and Makerspace</a>.</p> 
 
+          <p>Tom received a Ph.D. in Computer Science from <a href="http://www.umbc.edu/">UMBC</a> working with <a href="http://ebiquity.umbc.edu/person/html/Tim/Oates/">Tim Oates</a> in the <a href="http://www.coral-lab.org/">Cognition, Robotics, and Learning Lab</a>.  Before his doctoral studies, Tom received a B.Sc. in <a href="http://www.cs.umass.edu/">Computer Science</a> and a B.Sc. in <a href="http://www.math.umass.edu/">Mathematics</a> and <a href="http://www.umass.edu/linguist/">Linguistics</a> at the <a href="http://www.umass.edu/">University of Massachusetts, Amherst</a>.</p>
 
-    <div>
-      <p>At Wheaton, Tom teaches Computer Science courses in the Department of Mathematics and Computer Science. He is the founder of <strong>WHALE</strong>, the <a href="http://www.wheatoncollege.edu/whale/"><strong>WH</strong>eaton <strong>A</strong>utomomous <strong>LE</strong>arning Lab and Makerspace</a>.</p> 
+          <p>He was a member of the Center for Computer-Based Instructional Technology (now the <a href="http://www.cesd.umass.edu/">Center for Educational Software Development</a>) and the Experimental Knowledge Systems Laboratory in the <a href="http://www.cs.umass.edu/">School of Computer Science</a> and the <a href="http://www.umass.edu/language_acquisition/">Language Acquisition Lab</a> in the Linguistics department.</p>
+        </div>
+      </div>
 
-      <p>Tom received a Ph.D. in Computer Science from <a href="http://www.umbc.edu/">UMBC</a> working with <a href="http://ebiquity.umbc.edu/person/html/Tim/Oates/">Tim Oates</a> in the <a href="http://www.coral-lab.org/">Cognition, Robotics, and Learning Lab</a>.  Before his doctoral studies, Tom received a B.Sc. in <a href="http://www.cs.umass.edu/">Computer Science</a> and a B.Sc. in <a href="http://www.math.umass.edu/">Mathematics</a> and <a href="http://www.umass.edu/linguist/">Linguistics</a> at the <a href="http://www.umass.edu/">University of Massachusetts, Amherst</a>.</p>
-
-      <p>He was a member of the Center for Computer-Based Instructional Technology (now the <a href="http://www.cesd.umass.edu/">Center for Educational Software Development</a>) and the Experimental Knowledge Systems Laboratory in the <a href="http://www.cs.umass.edu/">School of Computer Science</a> and the <a href="http://www.umass.edu/language_acquisition/">Language Acquisition Lab</a> in the Linguistics department.</p>
+      <div class="footer" align="center">
+        <p>&copy; Tom Armstrong &mdash; {{data.year}}</p>
+      </div>
     </div>
 
     <script>
     angular.module("tarmstro_app", [])
       .controller("MainController", function($scope){
           $scope.data = {};
+          $scope.data.year = (new Date()).getFullYear();
           $scope.data.name = "Tom Armstrong";
+          $scope.data.title = (new Date("2014-07-01T00:00:00.000Z")) < new Date() ? "Associate" : "Assistant";
       });
     </script>
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-71379-7', 'tarmstro.com');
+    ga('send', 'pageview');
+  </script>
+
 
   </body>
 </html> 
