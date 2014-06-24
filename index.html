@@ -4,6 +4,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/flat-ui.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+    <script src="js/pubs.json"></script>
     <script src="js/tarmstro.js"></script>
   </head>
   <body ng-app="tarmstro_app">
@@ -14,10 +15,16 @@
           <img src="images/tom.jpg" width="250" class="img-polaroid img-rounded">
         </div>
         <div class="col-md-7">
-          <h1>Tom Armstrong</h1>
+          <h1>{{data.name}}</h1>
           <blockquote>Tom is {{data.title}} Professor of Computer Science in the <a href="http://wheatoncollege.edu/computer-science/">Department of Math and Computer Science</a> at <a href="http://www.wheatoncollege.edu/">Wheaton College</a> in Norton, Massachusetts. He was a <a href="http://www.cies.org/us_scholars/us_awards/">Fulbright</a>-<a href="http://www.usief.org.in/">Nehru</a> Visiting Lecturer at the <a href="http://www.ngu.ac.in/"> Hemchandracharya North Gujarat University </a> in <a href="http://maps.google.com/maps?q=patan+gujarat">Patan, Gujarat, India</a>.</blockquote>
         </div>
       </div>
+
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning" style="width: 75%"><span class="sr-only">35% Complete (success)</span></div>
+        <div class="progress-bar " style="width: 25%"><span class="sr-only">20% Complete (warning)</span></div>
+      </div>
+
 
       <div class="row well">
         <div class="col-lg-6">
@@ -29,24 +36,18 @@
           <p>He was a member of the Center for Computer-Based Instructional Technology (now the <a href="http://www.cesd.umass.edu/">Center for Educational Software Development</a>) and the Experimental Knowledge Systems Laboratory in the <a href="http://www.cs.umass.edu/">School of Computer Science</a> and the <a href="http://www.umass.edu/language_acquisition/">Language Acquisition Lab</a> in the Linguistics department.</p>
         </div>
         <div class="col-lg-6">
-          <div class="demo-col">
-          <a href="#fakelink" class="btn btn-default btn-sm btn-social-googleplus">
+          <a href="http://scholar.google.com/citations?user=Nqz5JNsAAAAJ" class="btn btn-default btn-sm btn-social-googleplus">
             <span class="fui-googleplus"></span>
-            Connect with Google
           </a>
-          <a href="#fakelink" class="btn btn-default btn-sm btn-social-facebook">
+          <a href="https://www.facebook.com/whalelab" class="btn btn-default btn-sm btn-social-facebook">
             <span class="fui-facebook"></span>
-            Connect with Facebook
           </a>
-          <a href="#fakelink" class="btn btn-default btn-sm btn-social-twitter">
+          <a href="https://twitter.com/tarmstro" class="btn btn-default btn-sm btn-social-twitter">
             <span class="fui-twitter"></span>
-            Connect with Twitter
           </a>
-          <a href="#fakelink" class="btn btn-default btn-sm btn-social-linkedin">
+          <a href="http://www.linkedin.com/in/tarmstro/" class="btn btn-default btn-sm btn-social-linkedin">
             <span class="fui-linkedin"></span>
-            Connect with LinkedIn
           </a>
-        </div>
         </div>
       </div>
 
