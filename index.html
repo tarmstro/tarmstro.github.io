@@ -6,28 +6,46 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
     <script src="js/pubs.json"></script>
     <script src="js/tarmstro.js"></script>
+    <link rel="shortcut icon" href="images/favicon.png?v=2">
   </head>
   <body ng-app="tarmstro_app">
     <br>
     <div class="container" ng-controller="MainController">
-      <div class="row">
-        <div class="col-md-4 col-md-offset-1">
-          <img src="images/tom.jpg" width="250" class="img-polaroid img-rounded">
+      <div class="row" style="min-height: 300px;">
+        <div class="col-md-5 col-md-offset-1">
+          <img src="images/tom.jpg" width="400" class="img-polaroid img-rounded">
         </div>
-        <div class="col-md-7">
-          <h1>{{data.name}}</h1>
+        <div class="col-md-6">
+          <h2>{{data.name}}</h2>
           <blockquote>Tom is {{data.title}} Professor of Computer Science in the <a href="http://wheatoncollege.edu/computer-science/">Department of Math and Computer Science</a> at <a href="http://www.wheatoncollege.edu/">Wheaton College</a> in Norton, Massachusetts. He was a <a href="http://www.cies.org/us_scholars/us_awards/">Fulbright</a>-<a href="http://www.usief.org.in/">Nehru</a> Visiting Lecturer at the <a href="http://www.ngu.ac.in/"> Hemchandracharya North Gujarat University </a> in <a href="http://maps.google.com/maps?q=patan+gujarat">Patan, Gujarat, India</a>.</blockquote>
+          <div class="iconbar iconbar-horizontal">
+            <ul>
+              <li>
+                <a href="http://scholar.google.com/citations?user=Nqz5JNsAAAAJ" class="fui-googleplus"></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/tarmstro" class="fui-twitter"></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/whalelab" class="fui-facebook"></a>
+              </li>
+              <li>
+                <a href="http://www.linkedin.com/in/tarmstro/" class="fui-linkedin"></a>
+              </li>
+              <li>              
+                <a href="https://maps.google.com/maps?q=26+E.+Main+Street+%2F%2F+Norton,+MA+02766&hl=en&sll=41.50035,-71.499023&sspn=1.50779,2.842712&hnear=26+E+Main+St,+Norton,+Bristol,+Massachusetts+02766&t=m&z=16&iwloc=A" class="fui-mail"></a>
+              </li>
+            </ul>
+          </div>              
         </div>
       </div>
 
-      <div class="progress">
-        <div class="progress-bar progress-bar-warning" style="width: 75%"><span class="sr-only">35% Complete (success)</span></div>
-        <div class="progress-bar " style="width: 25%"><span class="sr-only">20% Complete (warning)</span></div>
+      <div style="min-height: 50px;">
       </div>
 
 
       <div class="row well">
-        <div class="col-lg-6">
+        <div class="col-md-6">
           <h3 class="text-center">Biographical Sketch</h3>
           <p>At Wheaton, Tom teaches Computer Science courses in the Department of Mathematics and Computer Science. He is the founder of <strong>WHALE</strong>, the <a href="http://www.wheatoncollege.edu/whale/"><strong>WH</strong>eaton <strong>A</strong>utomomous <strong>LE</strong>arning Lab and Makerspace</a>.</p> 
 
@@ -35,19 +53,14 @@
 
           <p>He was a member of the Center for Computer-Based Instructional Technology (now the <a href="http://www.cesd.umass.edu/">Center for Educational Software Development</a>) and the Experimental Knowledge Systems Laboratory in the <a href="http://www.cs.umass.edu/">School of Computer Science</a> and the <a href="http://www.umass.edu/language_acquisition/">Language Acquisition Lab</a> in the Linguistics department.</p>
         </div>
-        <div class="col-lg-6">
-          <a href="http://scholar.google.com/citations?user=Nqz5JNsAAAAJ" class="btn btn-default btn-sm btn-social-googleplus">
-            <span class="fui-googleplus"></span>
-          </a>
-          <a href="https://www.facebook.com/whalelab" class="btn btn-default btn-sm btn-social-facebook">
-            <span class="fui-facebook"></span>
-          </a>
-          <a href="https://twitter.com/tarmstro" class="btn btn-default btn-sm btn-social-twitter">
-            <span class="fui-twitter"></span>
-          </a>
-          <a href="http://www.linkedin.com/in/tarmstro/" class="btn btn-default btn-sm btn-social-linkedin">
-            <span class="fui-linkedin"></span>
-          </a>
+        <div class="col-md-6">
+          <div class="row">
+            <div style="min-height: 100px;"></div>
+
+            <div class="col-md-8 col-md-offset-2">
+              <a href="http://www.wheatoncollege.edu/"><img src="images/wheaton.jpg" width="400" class="img-polaroid img-rounded"></a>            
+            </div>
+          </div>
         </div>
       </div>
 
