@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="tarmstro_app" ng-controller="MainController">
   <head>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/flat-ui.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.2/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
-    <script src="js/pubs.json"></script>
-    <script src="js/tarmstro.js"></script>
     <link rel="shortcut icon" href="images/favicon.png?v=2">
+    <title>{{data.name}} &mdash; {{data.title}} Professor of Computer Science</title>
   </head>
-  <body ng-app="tarmstro_app">
+  <body>
     <br>
-    <div class="container" ng-controller="MainController">
+    <div class="container">
       <div class="row" style="min-height: 300px;">
         <div class="col-md-5 col-md-offset-1">
           <img src="images/tom.jpg" width="400" class="img-polaroid img-rounded">
         </div>
         <div class="col-md-6">
           <h2>{{data.name}}</h2>
-          <blockquote>Tom is {{data.title}} Professor of Computer Science in the <a href="http://wheatoncollege.edu/computer-science/">Department of Math and Computer Science</a> at <a href="http://www.wheatoncollege.edu/">Wheaton College</a> in Norton, Massachusetts. He was a <a href="http://www.cies.org/us_scholars/us_awards/">Fulbright</a>-<a href="http://www.usief.org.in/">Nehru</a> Visiting Lecturer at the <a href="http://www.ngu.ac.in/"> Hemchandracharya North Gujarat University </a> in <a href="http://maps.google.com/maps?q=patan+gujarat">Patan, Gujarat, India</a>.</blockquote>
+          <blockquote>Tom is {{data.title}} Professor of Computer Science in the <a href="http://wheatoncollege.edu/computer-science/">Department of Math and Computer Science</a> at <a href="http://www.wheatoncollege.edu/">Wheaton College</a> in Norton, Massachusetts. He will be Resident Director of the <a href="http://wheatoncollege.edu/global/2010/09/02/royal-thimphu-college/">Wheaton in Bhutan</a> program at the <a href="http://www.rtc.bt/">Royal Thimphu College</a>. He was a <a href="http://www.cies.org/us_scholars/us_awards/">Fulbright</a>-<a href="http://www.usief.org.in/">Nehru</a> Visiting Lecturer at the <a href="http://www.ngu.ac.in/"> Hemchandracharya North Gujarat University </a> in <a href="http://maps.google.com/maps?q=patan+gujarat">Patan, Gujarat, India</a>.</blockquote>
           <div class="row">
             <div class="col-md-11 col-md-offset-1">
               <div class="iconbar iconbar-horizontal">
@@ -75,8 +73,36 @@
         </div>
       </div>
 
+
+
+
+      <div style="min-height: 50px;">
+      </div>
+
+
+      <div class="row" ng-controller="PublicationController">
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <tbody id="pubs">
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Conference</th>
+                    <th>Year</th>
+                  </tr>
+                </thead>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+
       <div class="footer" align="center">
-        <p>&copy; Tom Armstrong &mdash; {{data.year}}</p>
+        <p>&copy; {{data.name}} &mdash; {{data.year}}</p>
       </div>
     </div>
 
@@ -89,6 +115,10 @@
     ga('create', 'UA-71379-7', 'tarmstro.com');
     ga('send', 'pageview');
   </script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+  <script src="js/pubs.json"></script>
+  <script src="js/tarmstro.js"></script>
 
 
   </body>

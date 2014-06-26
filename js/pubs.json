@@ -7,7 +7,7 @@ var publications =
 			{"name": "Tom Armstrong"},
 			{"name": "Stephanie Antetomaso"}
 		],
-		"friendly_author": "<mark>Tom Armstrong</mark> and Stephanie Antetomaso",
+		"friendly_author": "Tom Armstrong and Stephanie Antetomaso",
 		"type": "inproceedings",
 		"year": "2011",
 		"booktitle": "Proceedings of the IEEE International Conference on Development and Learning (ICDL)",
@@ -20,12 +20,12 @@ var publications =
 		"title":"Classification of Patients Using Novel Multivariate Time Series Representations of Physiological Data",
 		"abstract": "In this paper we present two novel multivariate time series representations to classify physiological data of different lengths. The representations may be applied to any group of multivariate time series data that examine the state or health of an entity. Multivariate Bag-of-Patterns and Stacked Bags of-Patterns improve on their univariate counterpart, inspired by the bag-of-words model, by using multiple time series and analyzing the data in a multivariate fashion. We also borrow techniques from the natural language processing domain such as term frequency and inverse document frequency to improve classification accuracy. We introduce a technique named inverse frequency and present experimental results on classifying patients who have experienced acute episodes of hypotension.",
 		"author": [
-			{"name": "Patricia Ordóñez"},
+			{"name": "Patricia Ord&oacute;&ntilde;ez"},
 			{"name": "Tom Armstrong"},
 			{"name": "Tim Oates"},
 			{"name": "Jim Fackler"}
 		],
-		"friendly_author": "Patricia Ordóñez, <mark>Tom Armstrong</mark>, Tim Oates, and Jim Fackler",
+		"friendly_author": "Patricia Ord&oacute;&ntilde;ez, Tom Armstrong, Tim Oates, and Jim Fackler",
 		"type": "inproceedings",
 		"year": "2011",
 		"booktitle": "Proceedings of the 10th International Conference on Machine Learning and Applications (ICMLA)",
@@ -41,7 +41,7 @@ var publications =
 			{"name": "Tom Armstrong"},
 			{"name": "Eric Drewniak"}
 		],
-		"friendly_author": "<mark>Tom Armstrong</mark> and Eric Drewniak",
+		"friendly_author": "Tom Armstrong and Eric Drewniak",
 		"type": "inproceedings",
 		"year": "2011",
 		"booktitle": "Proceedings of the 7th International Conference on Machine Learning and Data Mining in Pattern Recognition (MLDM)",
@@ -56,7 +56,7 @@ var publications =
 		"author": [
 			{"name": "Tom Armstrong"}
 		],
-		"friendly_author": "<mark>Tom Armstrong</mark>",
+		"friendly_author": "Tom Armstrong",
 		"type": "inproceedings",
 		"year": "2010",
 		"booktitle": "Proceedings of the 15th Annual Conference on Innovation and Technology in Computer Science Education (ITiCSE)",
@@ -73,7 +73,7 @@ var publications =
 			{"name": "Tom Armstrong"},
 			{"name": "Michael B. Gousie"}
 		],
-		"friendly_author": "Mark D. LeBlanc, <mark>Tom Armstrong</mark>, and Michael B. Gousie",
+		"friendly_author": "Mark D. LeBlanc, Tom Armstrong, and Michael B. Gousie",
 		"type": "inproceedings",
 		"year": "2010",
 		"booktitle": "Proceedings of the 41st ACM Technical Symposium on Computer Science Education (SIGCSE)",
@@ -89,7 +89,7 @@ var publications =
 			{"name": "Tom Armstrong"},
 			{"name": "Tim Oates"}
 		],
-		"friendly_author": "<mark>Tom Armstrong</mark> and Tim Oates",
+		"friendly_author": "Tom Armstrong and Tim Oates",
 		"type": "inproceedings",
 		"year": "2008",
 		"booktitle": "Proceedings of the 21st International Florida Artificial Intelligence Research Society Conference (FLAIRS)",
@@ -105,7 +105,7 @@ var publications =
 			{"name": "Tom Armstrong"},
 			{"name": "Tim Oates"}
 		],
-		"friendly_author": "<mark>Tom Armstrong</mark> and Tim Oates",
+		"friendly_author": "Tom Armstrong and Tim Oates",
 		"type": "inproceedings",
 		"year": "2007",
 		"booktitle": "Proceedings of the 6th IEEE International Conference on Development and Learning (ICDL)",
@@ -122,7 +122,7 @@ var publications =
 			{"name": "Tom Armstrong"},
 			{"name": "Tim Oates"}
 		],
-		"friendly_author": "Joe Catalano, <mark>Tom Armstrong</mark>, and Tim Oates",
+		"friendly_author": "Joe Catalano, Tom Armstrong, and Tim Oates",
 		"type": "inproceedings",
 		"year": "2006",
 		"booktitle": "Proceedings of the 10th European Conference on Principles and Practice of Knowledge Discovery in Databases (PKDD)",
@@ -140,7 +140,7 @@ var publications =
 			{"name": "Leonor Becerra Bonache"},
 			{"name": "Mike Atamas"}
 		],
-		"friendly_author": "Tim Oates, <mark>Tom Armstrong</mark>, Leonor Becerra Bonache, and Mike Atamas",
+		"friendly_author": "Tim Oates, Tom Armstrong, Leonor Becerra Bonache, and Mike Atamas",
 		"type": "inproceedings",
 		"year": "2006",
 		"booktitle": "Proceedings of the 8th International Colloquium on Grammatical Inference (ICGI)",
@@ -158,7 +158,7 @@ var publications =
 			{"name": "Justin Harris"},
 			{"name": "Mark Nejman"}
 		],
-		"friendly_author": "Tim Oates, <mark>Tom Armstrong</mark>, Justin Harris, and Mark Nejman",
+		"friendly_author": "Tim Oates, Tom Armstrong, Justin Harris, and Mark Nejman",
 		"type": "inproceedings",
 		"year": "2004",
 		"booktitle": "Proceedings of the 19th National Conference on Artificial Intelligence (AAAI)",
