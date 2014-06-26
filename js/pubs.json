@@ -137,10 +137,10 @@ var publications =
 		"author": [
 			{"name": "Tim Oates"},
 			{"name": "Tom Armstrong"},
-			{"name": "Leonor Becerra Bonache"},
+			{"name": "Leonor Becerra-Bonache"},
 			{"name": "Mike Atamas"}
 		],
-		"friendly_author": "Tim Oates, Tom Armstrong, Leonor Becerra Bonache, and Mike Atamas",
+		"friendly_author": "Tim Oates, Tom Armstrong, Leonor Becerra-Bonache, and Mike Atamas",
 		"type": "inproceedings",
 		"year": "2006",
 		"booktitle": "Proceedings of the 8th International Colloquium on Grammatical Inference (ICGI)",
