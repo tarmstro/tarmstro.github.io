@@ -53,11 +53,12 @@
       </div>
 
       <div ng-controller="WellController">
-          <div class="row well" style="min-height: 300px">
+          <div class="row" style="min-height: 300px">
             <div class="col-md-2">
               <ul class="nav nav-list">
                 <li ng-click="changeView('bio')"><a>Biography</a></li>
                 <li ng-click="changeView('pubs')"><a>Publications</a></li>
+                <li ng-click="changeView('proj')"><a>Projects</a></li>
               </ul>
             </div>
             <div class="col-md-10" ng-switch on="section">
