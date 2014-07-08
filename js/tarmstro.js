@@ -26,4 +26,7 @@ angular.module("tarmstro_app", [])
     $scope.changeView = function(view){
       $scope.section = view;
     };
+  })
+  .controller("ProjectController", function($scope) {
+    // do something
   });
