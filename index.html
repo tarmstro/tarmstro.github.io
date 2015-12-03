@@ -1,152 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/flat-ui.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.png?v=2">
-    <title>Tom Armstrong &mdash; Associate Professor of Computer Science</title>
-  </head>
-  <body>
-    <br>
-    <div class="container" ng-app="tarmstro_app" ng-controller="MainController">
-      <div class="row" style="min-height: 300px;">
-        <div class="col-md-3 col-md-offset-1">
-          <img src="images/tom.jpg" width="450" class="img-polaroid img-rounded">
-        </div>
-        <div class="col-md-6 col-md-offset-2">
-          <h2>{{data.name}}</h2>
-          <blockquote>Tom is Associate Professor of Computer Science in the <a href="http://wheatoncollege.edu/computer-science/">Department of Math and Computer Science</a> at <a href="http://www.wheatoncollege.edu/">Wheaton College</a> in Norton, Massachusetts. He will serve as Resident Director of the <a href="http://wheatoncollege.edu/bhutan/">Wheaton in Bhutan</a> program at the <a href="http://www.rtc.bt/">Royal Thimphu College</a>. He was a <a href="http://www.cies.org/us_scholars/us_awards/">Fulbright</a>-<a href="http://www.usief.org.in/">Nehru</a> Visiting Lecturer at the <a href="http://www.ngu.ac.in/"> Hemchandracharya North Gujarat University </a> in <a href="http://maps.google.com/maps?q=patan+gujarat">Patan, Gujarat, India</a>.</blockquote>
-          <div class="row">
-            <div class="col-md-9 col-md-offset-2">
-              <div class="iconbar iconbar-horizontal">
-                <ul>
-                  <li>
-                    <a href="http://scholar.google.com/citations?user=Nqz5JNsAAAAJ"><i class="fa fa-book fa-lg fa-fw"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/tarmstro"><i class="fa fa-twitter fa-lg fa-fw"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/tarmstro"><i class="fa fa-github fa-lg fa-fw"></i></a>
-                  </li>
-                  <li>
-                    <a href="http://www.linkedin.com/in/tarmstro/"><i class="fa fa-linkedin fa-lg fa-fw"></i></a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a href="https://maps.google.com/maps?q=26+E.+Main+Street+%2F%2F+Norton,+MA+02766&hl=en&sll=41.50035,-71.499023&sspn=1.50779,2.842712&hnear=26+E+Main+St,+Norton,+Bristol,+Massachusetts+02766&t=m&z=16&iwloc=A"><i class="fa fa-map-marker fa-lg fa-fw"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://www.facebook.com/whalelab"><i class="fa fa-facebook fa-lg fa-fw"></i></a>
-                  </li>
-                  <li>
-                    <a href="mailto:tarmstro@wheatoncollege.edu"><i class="fa fa-envelope-o fa-lg fa-fw"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/tarmstro/vitae/raw/master/armstrong_tom_cv.pdf"><i class="fa fa-institution fa-lg fa-fw"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="two columns" style="margin-top: 15%">
+        &nbsp;
       </div>
-
-      <div style="min-height: 50px;">
-      </div>
-
-      <div ng-controller="WellController">
-          <div class="row" style="min-height: 300px">
-            <div class="col-md-2">
-              <div style="min-height: 50px;"></div>
-              <ul class="nav nav-list">
-                <li ng-click="changeView('bio')"><a>Biography</a></li>
-                <li ng-click="changeView('pubs')"><a>Publications</a></li>
-                <!-- <li ng-click="changeView('proj')"><a>Projects</a></li> -->
-              </ul>
-            </div>
-            <div class="col-md-10" ng-switch on="section">
-
-              <div ng-switch-default></div>
-
-              <div ng-switch-when="bio">
-                <h3 class="text-center">Biographical Sketch</h3>
-                <p>At Wheaton, Tom teaches Computer Science courses in the Department of Mathematics and Computer Science. He is the founder of <strong>WHALE</strong>, the <a href="http://www.wheatoncollege.edu/whale/"><strong>WH</strong>eaton <strong>A</strong>utomomous <strong>LE</strong>arning Lab and Makerspace</a>.</p>
-
-                <p>Tom received a Ph.D. in Computer Science from <a href="http://www.umbc.edu/">UMBC</a> working with <a href="http://ebiquity.umbc.edu/person/html/Tim/Oates/">Tim Oates</a> in the <a href="http://www.coral-lab.org/">Cognition, Robotics, and Learning Lab</a>.  Before his doctoral studies, he received a B.Sc. in <a href="http://www.cs.umass.edu/">Computer Science</a> and a B.Sc. in <a href="http://www.math.umass.edu/">Mathematics</a> and <a href="http://www.umass.edu/linguist/">Linguistics</a> at the <a href="http://www.umass.edu/">University of Massachusetts, Amherst</a>.</p>
-
-                <p>He was a member of the Center for Computer-Based Instructional Technology (now the <a href="http://www.cesd.umass.edu/">Center for Educational Software Development</a>) and the Experimental Knowledge Systems Laboratory in the <a href="http://www.cs.umass.edu/">School of Computer Science</a> and the <a href="http://www.umass.edu/language_acquisition/">Language Acquisition Lab</a> in the Linguistics department.</p>
-              </div>
-
-              <div class="row" ng-switch-when="pubs" ng-controller="PubController">
-                <h3 class="text-center">Publications</h3>
-                <div class="col-md-12">
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <tbody id="pubs">
-                        <thead>
-                          <tr>
-                            <th>Title</th>
-                            <th>Author</th>
-                            <th>Conference</th>
-                            <th>Year</th>
-                          </tr>
-                        </thead>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-
-
-<!--               <div ng-switch-when="proj">
-                <h3 class="text-center">Projects</h3>
-
-                <p class="lead">WHALE</p>
-
-                <blockquote>Lorem ipsum</blockquote>
-
-                <p class="lead">CineMap</p>
-
-                <p class="lead">MVBoP</p>
-
-                <p class="lead">American Centuries</p>
-              </div>
- -->
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-
-      <div class="footer" align="center">
-        <p>&copy; {{data.name}} &mdash; {{data.year}}</p>
+      <div class="eight columns" style="margin-top: 15%">
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th><a href="http://scholar.google.com/citations?user=Nqz5JNsAAAAJ"><i class="fa fa-book fa-lg fa-fw"></i></a></th>
+              <th><a href="https://twitter.com/tarmstro"><i class="fa fa-twitter fa-lg fa-fw"></i></a></th>
+              <th><a href="https://github.com/tarmstro"><i class="fa fa-github fa-lg fa-fw"></i></a></th>
+              <th><a href="http://www.linkedin.com/in/tarmstro/"><i class="fa fa-linkedin fa-lg fa-fw"></i></a></th>
+              <th><a href="https://maps.google.com/maps?q=26+E.+Main+Street+%2F%2F+Norton,+MA+02766&hl=en&sll=41.50035,-71.499023&sspn=1.50779,2.842712&hnear=26+E+Main+St,+Norton,+Bristol,+Massachusetts+02766&t=m&z=16&iwloc=A"><i class="fa fa-map-marker fa-lg fa-fw"></i></a></th>
+              <th><a href="https://www.facebook.com/whalelab"><i class="fa fa-facebook fa-lg fa-fw"></i></a></th>
+              <th><a href="mailto:tarmstro@wheatoncollege.edu"><i class="fa fa-envelope-o fa-lg fa-fw"></i></a></th>
+              <th><a href="https://github.com/tarmstro/vitae/raw/master/armstrong_tom_cv.pdf"><i class="fa fa-institution fa-lg fa-fw"></i></a></th>
+            </tr>
+          </thead>
+        </table>
       </div>
     </div>
+    <div class="row">
+      <div class="one column">
+        &nbsp;
+      </div>
+      <div class="five columns">
+        <h1>Tom Armstrong</h1>
+        <p>Tom is Associate Professor of Computer Science in the <a href="http://wheatoncollege.edu/computer-science/">Department of Math and Computer Science</a> at <a href="http://www.wheatoncollege.edu/">Wheaton College</a> in Norton, Massachusetts. In Spring 2016, he is on sabbatical from Wheaton. He served as Resident Director of the <a href="http://wheatoncollege.edu/bhutan/">Wheaton in Bhutan</a> program at the <a href="http://www.rtc.bt/">Royal Thimphu College</a>. He was a <a href="http://www.cies.org/us_scholars/us_awards/">Fulbright</a>-<a href="http://www.usief.org.in/">Nehru</a> Scholar at the <a href="http://www.ngu.ac.in/"> Hemchandracharya North Gujarat University </a> in <a href="http://maps.google.com/maps?q=patan+gujarat">Patan, Gujarat, India</a></p>
+      </div>
+      <div class="one column">
+        &nbsp;
+      </div>
+      <div class="four columns">
+        <img src="images/tom.jpg" class="u-max-full-width" style="border-radius: 10px;">
+      </div>
+    </div>
+  </div>
 
-
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-71379-11', 'auto');
-    ga('send', 'pageview');
-  </script>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/angular.min.js"></script>
-  <script src="js/pubs.json"></script>
-  <script src="js/tarmstro.js"></script>
-
-
-  </body>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 </html>
